@@ -110,7 +110,7 @@
                     font-size: 8px;
                 }
                 .div{
-                    padding-left: 110px;
+                    padding-left: 20px;
                 }
                 .emptys{
                     font-size: 30px;
@@ -137,10 +137,11 @@
                 }
                 @media (max-width: 480px){
                     .div{
-                        padding-left: 70px;
+                        padding-left: 0;
                     }
                     .emptys{
                         font-size: 10px;
+
                     }
                     .empty{
                         width: 100%;
@@ -160,7 +161,7 @@
                         font-size:10px;
                     }
                     .emptys{
-                        margin-left: 65px;
+                        margin-left: 0px;
                     }
                     }
                     @media (max-width: 430px){
