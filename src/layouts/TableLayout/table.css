@@ -121,6 +121,15 @@
                     margin-left: 0px;
                     font-size: 20px;
                 }
+                .pay{
+                    width:80%;
+                    height: 30%;
+                    font-weight: 600;
+                    color:gray;
+                    background: rgb(24, 24, 24);
+                    border-radius: 1rem;
+                    margin-left: -75%;
+                }
 
                 .longtable{
                     font-size:10px;
@@ -138,7 +147,15 @@
                         margin-left: -10px;
                         font-size: 10px;
                     }
-                    
+                    .pay{
+                        width:80%;
+                        height: 30%;
+                        font-weight: 600;
+                        color:gray;
+                        background: rgb(24, 24, 24);
+                        border-radius: 1rem;
+                        margin-left: -75%;
+                    }
                     .longtable{
                         font-size:10px;
                     }

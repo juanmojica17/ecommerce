@@ -17,8 +17,16 @@
     padding-top: 2px;
 
 }
+.update{
+    width:60%;
+    height: 30%;
+    font-weight: 600;
+    color:gray;
+    background: rgb(24, 24, 24);
+    border-radius: 1rem; 
+}
 .fix{
-    margin-left: 20%;
+    margin-left: 8%;
     justify-self: center;
     justify-content: center;
     justify-items: center;
@@ -118,6 +126,12 @@
             color:gray;
             background: rgb(24, 24, 24);
             border-radius: 1rem;
+        }
+        .fix{
+            margin-left: 20%;
+            justify-self: center;
+            justify-content: center;
+            justify-items: center;
         }
         }
 
