@@ -1,0 +1,41 @@
+.payment{
+    color:chartreuse;
+}
+
+.confirmcontainer{
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    width:80%;
+    margin-left: 10%;
+    padding-top: 10%;
+    padding-bottom: 30%;
+}
+
+.congratulations{
+    font-size: 60px;
+}
+
+.finish{
+    width:30%;
+    height: 30%;
+    font-weight: 600;
+    color:gray;
+    background: rgb(24, 24, 24);
+    border-radius: 1rem;
+    text-decoration: none;
+}
+
+
+.finish:hover{
+    text-decoration:transparent;
+    
+    color:black;
+    
+    
+}
+@media (max-width: 740px){
+    .congratulations{
+        font-size: 30px;
+    }
+    }

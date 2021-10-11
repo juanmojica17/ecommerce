@@ -1,0 +1,36 @@
+.product-list {
+    width: 80%;
+    margin: auto;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .cart{
+      display: flex;
+      padding-bottom: 35%;
+      height: 100%;
+      margin-left: 10%;
+      width: 80%;
+      padding-top: 4%;
+      top:0;
+      background-color: white;
+  }
+
+  
+
+  @media (max-width: 900px){
+    
+    .cart{
+        display: flex;
+        padding-bottom: 35%;
+        height: 100%;
+        margin-left: 0%;
+        width: 100%;
+        padding-top: 4%;
+        top:0;
+        background-color: white;
+    }
+  }
