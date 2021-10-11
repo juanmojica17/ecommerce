@@ -19,14 +19,14 @@ const TableCart = ({ children }) => {
       {state.cart.length > 0 ? (
         <div>
         <div className="table">
-        <Table className="longtable" striped bordered hover>
+        <Table striped bordered hover>
           <thead>
             <tr>
               <th>#</th>
               <th>Product Name</th>
               <th>Product Image</th>
               <th>Amount</th>
-              <th>Description</th>
+              
               <th>$</th>
               <th>Actions</th>
             </tr>

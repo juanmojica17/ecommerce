@@ -7,6 +7,7 @@
     
 }
 .center{
+    
     justify-content: center;
     justify-items: center;
     justify-items: center;
@@ -69,6 +70,8 @@
 }
 
 @media (max-width: 900px){
+
+    
     .table{
         width: 70%;
         margin-left:10%;
@@ -103,6 +106,9 @@
             }
 
             @media (max-width: 580px){
+                .center{
+                    font-size: 8px;
+                }
                 .div{
                     padding-left: 110px;
                 }
@@ -115,10 +121,7 @@
                     margin-left: 0px;
                     font-size: 20px;
                 }
-                .table{
-                    width: 30%;
-                    margin-left:2%;
-                }
+
                 .longtable{
                     font-size:10px;
                 }
@@ -135,10 +138,7 @@
                         margin-left: -10px;
                         font-size: 10px;
                     }
-                    .table{
-                        width: 30%;
-                        margin-left:1%;
-                    }
+                    
                     .longtable{
                         font-size:10px;
                     }
@@ -149,7 +149,7 @@
                     @media (max-width: 430px){
                         .table{
                             width: 30%;
-                            margin-left:1%;
+                            margin-left:0%;
                         }
                         .longtable{
                             font-size:8px;
@@ -158,11 +158,20 @@
                         }
                         @media (max-width: 400px){
                             .table{
-                                width: 30%;
-                                margin-left:1%;
+                                width: 1%;
+                                margin-left:-5%;
                             }
                             .longtable{
                                 font-size:6px;
                                 padding: 0;
+                            }
+                            .pay{
+                                width:80%;
+                                height: 30%;
+                                font-weight: 600;
+                                color:gray;
+                                background: rgb(24, 24, 24);
+                                border-radius: 1rem;
+                                margin-left: -75%;
                             }
                             }

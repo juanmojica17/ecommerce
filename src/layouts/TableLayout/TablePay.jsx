@@ -74,6 +74,7 @@ const TablePay = ({ children }) => {
     >
       {state.cart.length > 0 ? (
         <div>
+        <div className="fix">
         <Table striped bordered hover>
           <thead>
             <tr>
@@ -90,7 +91,8 @@ const TablePay = ({ children }) => {
             </tr>
           </tbody>
         </Table>
-        <Link to="/Cart"><button className="pay">Update</button></Link>
+        </div>
+        <Link to="/Cart"><button className="update">Update</button></Link>
         <div ><img className="img" src={cardspay}/></div>
         <form  className="form">
         <div   >

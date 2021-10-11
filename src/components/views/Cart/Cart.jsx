@@ -41,7 +41,7 @@ const Cart = () => {
               
             </td>
             <td>{counter}</td>
-            <td>{product.description}</td>
+            
             <td>{product.price*counter}</td>
             <td>
               <Button
