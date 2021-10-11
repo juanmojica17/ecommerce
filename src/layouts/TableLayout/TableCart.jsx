@@ -13,7 +13,7 @@ const TableCart = ({ children }) => {
 
   return (
     
-    <div
+    <div className="center"
       
     >
       {state.cart.length > 0 ? (
@@ -50,7 +50,7 @@ const TableCart = ({ children }) => {
         
         <div className="div">
         <p className="emptys">Empty shopping cart</p>
-        <br></br><Link className="empty" to="/"><button className="empty">COME BACK TO THE STORE</button></Link></div>
+        <br></br><Link  to="/"><button className="empty">COME BACK TO THE STORE</button></Link></div>
       )}
     </div>
   );

@@ -65,7 +65,8 @@ const TablePay = ({ children }) => {
     <div classname="containercheckout">
     <div
       style={{
-        width: "70%",
+        background: "white",
+        width: "100%",
         margin: "auto",
         marginTop: 0,
         textAlign: "center"
@@ -90,7 +91,7 @@ const TablePay = ({ children }) => {
           </tbody>
         </Table>
         <Link to="/Cart"><button className="pay">Update</button></Link>
-        <div><img src={cardspay}/></div>
+        <div ><img className="img" src={cardspay}/></div>
         <form  className="form">
         <div   >
             <span className="span" >Card Name</span>

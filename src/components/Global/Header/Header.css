@@ -8,6 +8,9 @@
     
 }
 
+.width{
+    width: 100%;
+}
 .logo:hover{
     color:white;
 }

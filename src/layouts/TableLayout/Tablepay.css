@@ -1,4 +1,9 @@
+.containercheckout{
+    width: 100%;
+    background: black;
+}
 .span{
+
     width: 30px;
     
     border: 1px solid black;
@@ -87,7 +92,42 @@
     margin-left: 1%;
     display: flex;
 }
+.img{
+
+    width:80%;
+}
     }
 
 
- 
+    @media (max-width: 550px){
+        .submit-pay{
+            top:10px;
+            font-size: 9px;
+        }
+
+        .span{
+            width:30%;
+            height: 30%;
+            font-weight: 600;
+            color:gray;
+            background: rgb(24, 24, 24);
+            border-radius: 1rem;
+        }
+        }
+
+        @media (max-width: 550px){
+            .submit-pay{
+                top:10px;
+                font-size: 9px;
+                width: 60%;
+            }
+    
+            .span{
+                width:30%;
+                height: 30%;
+                font-weight: 600;
+                color:gray;
+                background: rgb(24, 24, 24);
+                border-radius: 1rem;
+            }
+            }

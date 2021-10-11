@@ -10,6 +10,7 @@ import "./Header.css";
 const Header = ({ cart, total, session, HandleSearchProduct, setSearch, search }) => {
   
   return (
+    <div className="width">
     <Navbar bg="dark" variant="dark">
       <Container>
         <Navbar.Brand>
@@ -38,6 +39,7 @@ const Header = ({ cart, total, session, HandleSearchProduct, setSearch, search }
         </Nav>
       </Container>
     </Navbar>
+    </div>
   );
 };
 

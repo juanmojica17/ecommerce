@@ -6,7 +6,18 @@
         text-align: center;
     
 }
+.center{
+    justify-content: center;
+    justify-items: center;
+    justify-items: center;
+    text-align: center;
+}
 .emptys{
+    
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    text-align: center;
     font-size: 50px;
 }
 
@@ -20,7 +31,13 @@
 }
 
 .div{
-    padding-left: 300px;
+    
+    justify-content: center;
+    justify-self: center;
+   justify-items: center;
+   text-align: center;
+    width:100%;
+
 }
 
 .empty:hover{
@@ -73,10 +90,7 @@
                 margin-left:2%;
 
             }
-            .div{
-                margin-left: -5px;
-                padding-left: 50px;
-            }
+            
             
             .pay{
                 width:60%;
@@ -96,6 +110,8 @@
                     font-size: 30px;
                 }
                 .empty{
+                    justify-content: center;
+                    text-align: center;
                     margin-left: 0px;
                     font-size: 20px;
                 }
@@ -115,6 +131,7 @@
                         font-size: 10px;
                     }
                     .empty{
+                        width: 100%;
                         margin-left: -10px;
                         font-size: 10px;
                     }
@@ -124,6 +141,9 @@
                     }
                     .longtable{
                         font-size:10px;
+                    }
+                    .emptys{
+                        margin-left: 65px;
                     }
                     }
                     @media (max-width: 430px){
