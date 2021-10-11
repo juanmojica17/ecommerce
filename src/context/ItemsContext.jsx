@@ -88,7 +88,7 @@ const initialState = {
       },
       {
           id: 10,
-          name: "TISSOT T0554271601700",
+          name: "TISSOT T055",
           desc: "Automatic Chronograph and Tachymeter Sapphire Crystal Leather Band Watch",
           price: 2500,
           img:
@@ -97,7 +97,7 @@ const initialState = {
         },
         {
           id: 11,
-          name: "TISSOT T1154172705100",
+          name: "TISSOT T1154",
           desc: " Red Men's Quartz Watch",
           price: 5600,
           img:
