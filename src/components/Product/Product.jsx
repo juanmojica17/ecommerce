@@ -50,7 +50,9 @@ const Product = ({ name, description, price, id, img, stock, status }) => {
 
   return (
     <Card className="card" >
+      <div className="divimg">
       <Card.Img className="cardimg" variant="top" src={img} />
+      </div>
       <Card.Body>
         <Card.Title>{name}</Card.Title>
         <Card.Text>{description}</Card.Text>
