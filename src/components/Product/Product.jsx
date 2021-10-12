@@ -15,10 +15,10 @@ const Product = ({ name, description, price, id, img, stock, status }) => {
   const { state, dispatch } = useContext(CartContext);
   const  {state1}   = useContext(ItemsContext);
   
-  const [buy, setBuy]= useState(false);
+ 
   const [payload, setPayload] = useState({});
-  const [counter, setCounter]=useState(0);
-  const [nomore,setNomore]=useState("");
+  
+  const cartfind =state.cart.find(p=>p.id===id);
   useEffect(() => {
     setPayload({
       name,
@@ -32,15 +32,23 @@ const Product = ({ name, description, price, id, img, stock, status }) => {
   }, []);
 
   const handleDispatch = payload => {
-    dispatch({ type: "ADD", payload });
-    setCounter(counter+1)
-    if(counter === stock-1){
-      setBuy(true)
-      setNomore("No More Items Avaliable")
-
+    
+    const verifyCart=state.cart.filter(p=>p.id===payload.id)
+    if(verifyCart.length>0){
+      const newproduct={...verifyCart[0], quantity: verifyCart[0].quantity + 1}
+      return dispatch({type: "ADDOTHER", payload:newproduct });
+      
+      
     }
+
+    
+    dispatch({ type: "ADD", payload });
+    
+
+   
     
   };
+
 
   return (
     <Card className="card" >
@@ -48,9 +56,9 @@ const Product = ({ name, description, price, id, img, stock, status }) => {
       <Card.Body>
         <Card.Title>{name}</Card.Title>
         <Card.Text>{description}</Card.Text>
-        <p>amount = {counter}</p>
+        <p>AMOUNT = {cartfind?.quantity||0}</p>
         <Button className="button"
-          disabled={buy}
+          disabled={cartfind?cartfind.quantity===stock:false}
           variant="dark"
           onClick={() =>handleDispatch({ ...payload })}
         >
@@ -58,7 +66,8 @@ const Product = ({ name, description, price, id, img, stock, status }) => {
           
           ${price} +
         </Button>
-        <p>{nomore}</p>
+        {cartfind?.quantity === stock &&
+        <p>not avaliable</p>}
       </Card.Body>
     </Card>
   );

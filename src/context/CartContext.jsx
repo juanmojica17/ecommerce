@@ -14,15 +14,26 @@ const reducer = (state, action) => {
       return {
         ...state,
         totalPrice: state.totalPrice + action.payload.price,
-        cart: [...state.cart, action.payload]
+        cart: [...state.cart, {...action.payload, quantity:1}]
       };
 
     case "REMOVE":
       return {
         ...state,
         totalPrice: state.totalPrice - action.payload.price,
-        cart: state.cart.filter(product => product.id !== action.payload.id) //<-- cart: [{id: 1, name: ""}, ]
+        cart: state.cart.filter(product => product.id !== action.payload.id) 
       };
+
+    case "ADDOTHER":
+      
+      const filtercart = state.cart.filter(product=> product.id !== action.payload.id); 
+      console.log(state.cart)
+      return{
+        ...state,
+        totalPrice: state.totalPrice + action.payload.price,
+        cart: [...filtercart,action.payload] 
+
+      }
 
       
 

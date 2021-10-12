@@ -41,7 +41,7 @@ body{
       flex-wrap: wrap;
     }
     .center{
-      
+      margin-left: 10%;
       height: 1vhscreen;
       background:white;
       width:80%;

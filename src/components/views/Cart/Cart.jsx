@@ -40,9 +40,9 @@ const Cart = () => {
               
               
             </td>
-            <td>{counter}</td>
+            <td>{product.quantity}</td>
             
-            <td>{product.price*counter}</td>
+            <td>{product.price*product.quantity}</td>
             <td>
               <Button
                 variant="danger"

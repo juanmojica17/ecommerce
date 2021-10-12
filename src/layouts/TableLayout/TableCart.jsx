@@ -12,7 +12,7 @@ const TableCart = ({ children }) => {
   const { state } = useContext( CartContext);
 
   return (
-    
+    <div className="redux">
     <div className="center"
       
     >
@@ -52,6 +52,7 @@ const TableCart = ({ children }) => {
         <p className="emptys">Empty shopping cart</p>
         <br></br><Link  to="/"><button className="empty">COME BACK TO THE STORE</button></Link></div>
       )}
+    </div>
     </div>
   );
 };

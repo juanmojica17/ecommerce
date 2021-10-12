@@ -1,5 +1,5 @@
 import React, {useContext} from "react";
-
+import { useHistory } from "react-router";
 
 //Styles
 
@@ -13,7 +13,7 @@ import Product from "../../Product/Product";
 import "./Home.css"
 
 const Home = () => {
-  //Context del listado de productos
+  const history=useHistory()
   const { state1: State1 } = useContext(ItemsContext);
   
   return (
