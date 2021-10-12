@@ -14,7 +14,7 @@ import "../Product/Product.css"
 const Product = ({ name, description, price, id, img, stock, status }) => {
   const { state, dispatch } = useContext(CartContext);
   const  {state1}   = useContext(ItemsContext);
-  
+  const [counter,setCounter] =useState(0);
  
   const [payload, setPayload] = useState({});
   
@@ -37,10 +37,8 @@ const Product = ({ name, description, price, id, img, stock, status }) => {
     if(verifyCart.length>0){
       const newproduct={...verifyCart[0], quantity: verifyCart[0].quantity + 1}
       return dispatch({type: "ADDOTHER", payload:newproduct });
-      
-      
-    }
-
+       }
+       setCounter(counter + 1);
     
     dispatch({ type: "ADD", payload });
     

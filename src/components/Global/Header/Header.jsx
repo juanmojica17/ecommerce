@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 //Bootstrap components
 import { Navbar, Container, Nav } from "react-bootstrap";
@@ -8,7 +8,11 @@ import cart1 from "../../../icons/cart1.png"
 import "./Header.css";
 
 const Header = ({ cart, total, session, HandleSearchProduct, setSearch, search }) => {
-  
+  const [counter,setCounter]=useState(-1);
+  useEffect(()=>{
+    setCounter(counter+1);
+  },[total])
+
   return (
     <div className="width">
     <Navbar bg="dark" variant="dark">
@@ -33,7 +37,7 @@ const Header = ({ cart, total, session, HandleSearchProduct, setSearch, search }
        
         <Nav.Link className="link2">
             <Link to="/Cart" className="link">
-            {cart.length}<img src={cart1}/>
+            {counter}<img src={cart1}/>
             </Link>
         </Nav.Link>
         </Nav>
